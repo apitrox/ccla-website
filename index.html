@@ -65,7 +65,7 @@
     <header id="header" class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
         <div class="container mx-auto px-4">
             <!-- Top Bar with Logo -->
-            <div class="flex items-center justify-between py-6">
+            <div class="flex items-center justify-between py-3">
                 <!-- Logo -->
                 <div class="flex items-center space-x-4">
                     <a href="/" class="flex items-center">
@@ -82,11 +82,11 @@
                 <div class="flex items-center justify-between">
                     <!-- Desktop Menu -->
                     <ul class="hidden md:flex text-base font-medium w-full justify-center">
-                        <li><a href="/" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
-                        <li><a href="/about.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
-                        <li><a href="/blog.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
-                        <li><a href="/faqs.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
-                        <li><a href="/contact.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
+                        <li><a href="index.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
+                        <li><a href="about.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
+                        <li><a href="blog.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
+                        <li><a href="faqs.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
+                        <li><a href="contact.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
                     </ul>
                     
                     <!-- Mobile Menu Button -->
@@ -100,11 +100,11 @@
                 <!-- Mobile Menu -->
                 <div id="mobile-menu" class="hidden md:hidden" style="background-color: #bf8c4a;">
                     <ul>
-                        <li><a href="/" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
-                        <li><a href="/about.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
-                        <li><a href="/blog.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
-                        <li><a href="/faqs.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
-                        <li><a href="/contact.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
+                        <li><a href="index.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
+                        <li><a href="about.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
+                        <li><a href="blog.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
+                        <li><a href="faqs.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
+                        <li><a href="contact.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -115,33 +115,21 @@
     <main class="min-h-screen">
         
         <!-- Hero Carousel Section -->
-        <section class="bg-white py-12">
-            <div class="container mx-auto px-4">
-                <div class="swiper hero-swiper rounded-lg overflow-hidden shadow-xl">
+        <section class="bg-white py-2">
+            <div class="flex justify-center px-4">
+                <div class="swiper hero-swiper rounded-lg overflow-hidden shadow-xl" style="max-width: 538px; width: 100%;">
                     <div class="swiper-wrapper">
                         <!-- Slide 1 -->
                         <div class="swiper-slide">
-                            <div class="relative h-96 flex items-center justify-center">
-                                <img src="images/slider_pic2-1.png" alt="Child Custody Legal Aid" class="absolute inset-0 w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-black bg-opacity-30"></div>
-                                <div class="text-center text-white z-10 px-4">
-                                    <h1 class="text-4xl md:text-5xl font-bold mb-4 font-raleway">Child Custody Legal Aid</h1>
-                                    <p class="text-xl md:text-2xl mb-6">Your Children's First Interest</p>
-                                    <a href="about.html" class="inline-block bg-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200" style="color: #046534;">Learn More</a>
-                                </div>
+                            <div class="relative flex items-center justify-center" style="height: 182px;">
+                                <img src="images/slider_pic2-1.png" alt="Child Custody Legal Aid" class="absolute inset-0 w-full h-full object-contain">
                             </div>
                         </div>
                         
                         <!-- Slide 2 -->
                         <div class="swiper-slide">
-                            <div class="relative h-96 flex items-center justify-center">
-                                <img src="images/slider_pic1-1.png" alt="Legal Assistance You Can Trust" class="absolute inset-0 w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-black bg-opacity-30"></div>
-                                <div class="text-center text-white z-10 px-4">
-                                    <h2 class="text-4xl md:text-5xl font-bold mb-4 font-raleway">Legal Assistance You Can Trust</h2>
-                                    <p class="text-xl md:text-2xl mb-6">Expert guidance for child custody matters</p>
-                                    <a href="contact.html" class="inline-block bg-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200" style="color: #ca7f1e;">Contact Us</a>
-                                </div>
+                            <div class="relative flex items-center justify-center" style="height: 182px;">
+                                <img src="images/slider_pic1-1.png" alt="Legal Assistance You Can Trust" class="absolute inset-0 w-full h-full object-contain">
                             </div>
                         </div>
                     </div>
