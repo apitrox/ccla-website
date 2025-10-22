@@ -54,7 +54,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body class="font-roboto bg-white text-gray-900">
 
@@ -79,11 +82,11 @@
                 <div class="flex items-center justify-between">
                     <!-- Desktop Menu -->
                     <ul class="hidden md:flex text-base font-medium w-full justify-center">
-                        <li><a href="index.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
-                        <li><a href="about.html" class="block px-5 py-2 transition-colors duration-200" style="color: #eaf1ed; background-color: #bf8c4a;">About</a></li>
-                        <li><a href="blog.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
-                        <li><a href="faqs.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
-                        <li><a href="contact.html" class="block px-5 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
+                        <li><a href="index.html" class="block px-3 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
+                        <li><a href="about.html" class="block px-3 py-2 transition-colors duration-200" style="color: #eaf1ed; background-color: #bf8c4a;">About</a></li>
+                        <li><a href="blog.html" class="block px-3 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
+                        <li><a href="faqs.html" class="block px-3 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
+                        <li><a href="contact.html" class="block px-3 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
                     </ul>
                     
                     <!-- Mobile Menu Button -->
@@ -110,6 +113,34 @@
 
     <!-- Main Content -->
     <main class="min-h-screen">
+        
+        <!-- Hero Carousel Section -->
+        <section class="bg-white py-2">
+            <div class="flex justify-center px-4">
+                <div class="swiper hero-swiper rounded-lg overflow-hidden shadow-xl" style="max-width: 538px; width: 100%;">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="relative flex items-center justify-center" style="height: 182px;">
+                                <img src="images/slider_pic2-1.png" alt="Child Custody Legal Aid" class="absolute inset-0 w-full h-full object-contain">
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="relative flex items-center justify-center" style="height: 182px;">
+                                <img src="images/slider_pic1-1.png" alt="Legal Assistance You Can Trust" class="absolute inset-0 w-full h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <div class="swiper-button-next text-white"></div>
+                    <div class="swiper-button-prev text-white"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
         
         <!-- Page Header -->
         <section class="py-16 text-white" style="background: linear-gradient(135deg, #046534 0%, #0a8a4a 100%);">
@@ -257,6 +288,9 @@
 
     <!-- MDBootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
     <!-- Custom JavaScript -->
     <script src="assets/js/script.js"></script>
