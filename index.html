@@ -41,9 +41,9 @@
                         'montserrat': ['Montserrat', 'sans-serif'],
                     },
                     colors: {
-                        'primary': '#2563eb',
-                        'secondary': '#64748b',
-                        'accent': '#f59e0b',
+                        'primary': '#046534',
+                        'secondary': '#ca7f1e',
+                        'accent': '#bf8c4a',
                     }
                 }
             }
@@ -65,32 +65,32 @@
     <header id="header" class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
         <div class="container mx-auto px-4">
             <!-- Top Bar with Logo -->
-            <div class="flex items-center justify-between py-4">
+            <div class="flex items-center justify-between py-6">
                 <!-- Logo -->
                 <div class="flex items-center space-x-4">
                     <a href="/" class="flex items-center">
-                        <img src="/images/logo.png" alt="Child Custody Legal Aid" class="h-16 w-auto">
+                        <img src="/images/logo.png" alt="Child Custody Legal Aid" class="h-auto" style="max-height: 80px;">
                     </a>
-                    <div class="hidden md:block">
-                        <p class="text-sm text-gray-600">A program provided by<br><span class="font-semibold">America Family Law Center</span></p>
+                    <div class="hidden md:block border-l border-primary pl-4 ml-4">
+                        <p class="text-xs" style="color: #046534;">A program provided by<br><span class="font-bold">America Family Law Center</span></p>
                     </div>
                 </div>
             </div>
             
             <!-- Navigation -->
-            <nav class="border-t border-gray-200">
-                <div class="flex items-center justify-between py-3">
+            <nav class="border-t-0" style="background-color: #ca7f1e;">
+                <div class="flex items-center justify-between">
                     <!-- Desktop Menu -->
-                    <ul class="hidden md:flex space-x-8 text-base font-medium">
-                        <li><a href="/" class="text-gray-700 hover:text-primary transition-colors duration-200">Home</a></li>
-                        <li><a href="/about/" class="text-gray-700 hover:text-primary transition-colors duration-200">About</a></li>
-                        <li><a href="/blog/" class="text-gray-700 hover:text-primary transition-colors duration-200">Blog</a></li>
-                        <li><a href="/faqs/" class="text-gray-700 hover:text-primary transition-colors duration-200">FAQs</a></li>
-                        <li><a href="/contact/" class="text-gray-700 hover:text-primary transition-colors duration-200">Contact Us</a></li>
+                    <ul class="hidden md:flex text-base font-medium w-full justify-center">
+                        <li><a href="/" class="block px-5 py-5 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
+                        <li><a href="/about.html" class="block px-5 py-5 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
+                        <li><a href="/blog.html" class="block px-5 py-5 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
+                        <li><a href="/faqs.html" class="block px-5 py-5 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
+                        <li><a href="/contact.html" class="block px-5 py-5 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
                     </ul>
                     
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-primary focus:outline-none" aria-label="Toggle menu">
+                    <button id="mobile-menu-button" class="md:hidden focus:outline-none px-4" aria-label="Toggle menu" style="color: #eaf1ed;">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -98,13 +98,13 @@
                 </div>
                 
                 <!-- Mobile Menu -->
-                <div id="mobile-menu" class="hidden md:hidden pb-4">
-                    <ul class="space-y-2">
-                        <li><a href="/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors duration-200 rounded">Home</a></li>
-                        <li><a href="/about/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors duration-200 rounded">About</a></li>
-                        <li><a href="/blog/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors duration-200 rounded">Blog</a></li>
-                        <li><a href="/faqs/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors duration-200 rounded">FAQs</a></li>
-                        <li><a href="/contact/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors duration-200 rounded">Contact Us</a></li>
+                <div id="mobile-menu" class="hidden md:hidden" style="background-color: #bf8c4a;">
+                    <ul>
+                        <li><a href="/" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
+                        <li><a href="/about.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
+                        <li><a href="/blog.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
+                        <li><a href="/faqs.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
+                        <li><a href="/contact.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -121,22 +121,22 @@
                     <div class="swiper-wrapper">
                         <!-- Slide 1 -->
                         <div class="swiper-slide">
-                            <div class="relative h-96 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center">
+                            <div class="relative h-96 flex items-center justify-center" style="background: linear-gradient(135deg, #046534 0%, #0a8a4a 100%);">
                                 <div class="text-center text-white z-10 px-4">
                                     <h1 class="text-4xl md:text-5xl font-bold mb-4 font-raleway">Child Custody Legal Aid</h1>
                                     <p class="text-xl md:text-2xl mb-6">Your Children's First Interest</p>
-                                    <a href="/about/" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">Learn More</a>
+                                    <a href="/about.html" class="inline-block bg-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200" style="color: #046534;">Learn More</a>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- Slide 2 -->
                         <div class="swiper-slide">
-                            <div class="relative h-96 bg-gradient-to-r from-indigo-600 to-purple-800 flex items-center justify-center">
+                            <div class="relative h-96 flex items-center justify-center" style="background: linear-gradient(135deg, #ca7f1e 0%, #d4943d 100%);">
                                 <div class="text-center text-white z-10 px-4">
                                     <h2 class="text-4xl md:text-5xl font-bold mb-4 font-raleway">Legal Assistance You Can Trust</h2>
                                     <p class="text-xl md:text-2xl mb-6">Expert guidance for child custody matters</p>
-                                    <a href="/contact/" class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">Contact Us</a>
+                                    <a href="/contact.html" class="inline-block bg-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200" style="color: #ca7f1e;">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -167,8 +167,8 @@
                             we are dedicated to ensuring that your children's best interests come first.
                         </p>
                         
-                        <div class="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
-                            <h3 class="text-2xl font-bold mb-3 text-blue-900">How We Can Help</h3>
+                        <div class="border-l-4 p-6 my-8" style="background-color: #f0f7f4; border-color: #046534;">
+                            <h3 class="text-2xl font-bold mb-3" style="color: #046534;">How We Can Help</h3>
                             <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-start">
                                     <svg class="w-6 h-6 text-blue-600 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -204,10 +204,10 @@
                         </p>
                         
                         <div class="text-center mt-12">
-                            <a href="/about/" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 mr-4">
+                            <a href="/about.html" class="inline-block text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 mr-4" style="background-color: #046534;" onmouseover="this.style.backgroundColor='#0a8a4a'" onmouseout="this.style.backgroundColor='#046534'">
                                 Learn More About Us
                             </a>
-                            <a href="/contact/" class="inline-block bg-gray-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors duration-200">
+                            <a href="/contact.html" class="inline-block text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200" style="background-color: #ca7f1e;" onmouseover="this.style.backgroundColor='#bf8c4a'" onmouseout="this.style.backgroundColor='#ca7f1e'">
                                 Get Started Today
                             </a>
                         </div>
@@ -226,12 +226,12 @@
                     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-3">
-                                <a href="/determining-child-custody-texas/" class="text-gray-900 hover:text-blue-600 transition-colors duration-200">
+                                <a href="/determining-child-custody-texas.html" class="text-gray-900 transition-colors duration-200" onmouseover="this.style.color='#046534'" onmouseout="this.style.color='#111827'">
                                     Determining Child Custody in Texas
                                 </a>
                             </h3>
                             <p class="text-gray-600 mb-4">Learn about the factors Texas courts consider when determining child custody arrangements.</p>
-                            <a href="/determining-child-custody-texas/" class="text-blue-600 hover:text-blue-800 font-semibold">Read More →</a>
+                            <a href="/determining-child-custody-texas.html" class="font-semibold" style="color: #046534;" onmouseover="this.style.color='#0a8a4a'" onmouseout="this.style.color='#046534'">Read More →</a>
                         </div>
                     </article>
                     
@@ -263,7 +263,7 @@
                 </div>
                 
                 <div class="text-center mt-12">
-                    <a href="/blog/" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
+                    <a href="/blog.html" class="inline-block text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200" style="background-color: #ca7f1e;" onmouseover="this.style.backgroundColor='#bf8c4a'" onmouseout="this.style.backgroundColor='#ca7f1e'">
                         View All Articles
                     </a>
                 </div>

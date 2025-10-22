@@ -41,9 +41,9 @@
                         'montserrat': ['Montserrat', 'sans-serif'],
                     },
                     colors: {
-                        'primary': '#2563eb',
-                        'secondary': '#64748b',
-                        'accent': '#f59e0b',
+                        'primary': '#046534',
+                        'secondary': '#ca7f1e',
+                        'accent': '#bf8c4a',
                     }
                 }
             }
@@ -61,41 +61,47 @@
     <!-- Header -->
     <header id="header" class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
         <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between py-4">
+            <!-- Top Bar with Logo -->
+            <div class="flex items-center justify-between py-6">
+                <!-- Logo -->
                 <div class="flex items-center space-x-4">
                     <a href="/" class="flex items-center">
-                        <img src="/images/logo.png" alt="Child Custody Legal Aid" class="h-16 w-auto">
+                        <img src="/images/logo.png" alt="Child Custody Legal Aid" class="h-auto" style="max-height: 80px;">
                     </a>
-                    <div class="hidden md:block">
-                        <p class="text-sm text-gray-600">A program provided by<br><span class="font-semibold">America Family Law Center</span></p>
+                    <div class="hidden md:block border-l border-primary pl-4 ml-4">
+                        <p class="text-xs" style="color: #046534;">A program provided by<br><span class="font-bold">America Family Law Center</span></p>
                     </div>
                 </div>
             </div>
             
-            <nav class="border-t border-gray-200">
-                <div class="flex items-center justify-between py-3">
-                    <ul class="hidden md:flex space-x-8 text-base font-medium">
-                        <li><a href="/" class="text-gray-700 hover:text-primary transition-colors duration-200">Home</a></li>
-                        <li><a href="/about.html" class="text-gray-700 hover:text-primary transition-colors duration-200">About</a></li>
-                        <li><a href="/blog.html" class="text-gray-700 hover:text-primary transition-colors duration-200">Blog</a></li>
-                        <li><a href="/faqs.html" class="text-primary font-semibold transition-colors duration-200">FAQs</a></li>
-                        <li><a href="/contact.html" class="text-gray-700 hover:text-primary transition-colors duration-200">Contact Us</a></li>
+            <!-- Navigation -->
+            <nav class="border-t-0" style="background-color: #ca7f1e;">
+                <div class="flex items-center justify-between">
+                    <!-- Desktop Menu -->
+                    <ul class="hidden md:flex text-base font-medium w-full justify-center">
+                        <li><a href="/" class="block px-5 py-5 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
+                        <li><a href="/about.html" class="block px-5 py-5 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
+                        <li><a href="/blog.html" class="block px-5 py-5 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
+                        <li><a href="/faqs.html" class="block px-5 py-5 transition-colors duration-200" style="color: #eaf1ed; background-color: #bf8c4a;">FAQs</a></li>
+                        <li><a href="/contact.html" class="block px-5 py-5 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
                     </ul>
                     
-                    <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-primary focus:outline-none" aria-label="Toggle menu">
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden focus:outline-none px-4" aria-label="Toggle menu" style="color: #eaf1ed;">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
                 
-                <div id="mobile-menu" class="hidden md:hidden pb-4">
-                    <ul class="space-y-2">
-                        <li><a href="/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors duration-200 rounded">Home</a></li>
-                        <li><a href="/about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors duration-200 rounded">About</a></li>
-                        <li><a href="/blog.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors duration-200 rounded">Blog</a></li>
-                        <li><a href="/faqs.html" class="block px-4 py-2 bg-blue-50 text-primary font-semibold transition-colors duration-200 rounded">FAQs</a></li>
-                        <li><a href="/contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors duration-200 rounded">Contact Us</a></li>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden" style="background-color: #bf8c4a;">
+                    <ul>
+                        <li><a href="/" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
+                        <li><a href="/about.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
+                        <li><a href="/blog.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
+                        <li><a href="/faqs.html" class="block px-4 py-3 transition-colors duration-200" style="color: #eaf1ed; background-color: #734d1b;">FAQs</a></li>
+                        <li><a href="/contact.html" class="block px-4 py-3 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -106,7 +112,7 @@
     <main class="min-h-screen">
         
         <!-- Page Header -->
-        <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-16 text-white">
+        <section class="py-16 text-white" style="background: linear-gradient(135deg, #046534 0%, #0a8a4a 100%);">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl font-bold mb-4 font-raleway">Custodial Parent FAQs</h1>
