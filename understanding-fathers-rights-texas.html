@@ -222,35 +222,43 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-primary text-white py-8 mt-12">
+    <footer class="text-white py-6" style="background-color: #046534;">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Logo & Info -->
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Child Custody Legal Aid</h3>
-                    <p class="text-sm">Providing legal assistance and support for child custody matters in Texas.</p>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-6">
+                <!-- About Column - Wider -->
+                <div class="md:col-span-5">
+                    <h3 class="text-white font-bold text-lg mb-3">Child Custody Legal Aid</h3>
+                    <p class="text-sm mb-3">
+                        A program provided by the America Family Law Center, a 501(c)(3) nonprofit charitable organization.
+                    </p>
+                    <p class="text-xs" style="opacity: 0.8;">
+                        This site is for general informational purposes only. The information on this site is not legal advice 
+                        and should not be used in place of legal advice. Consult a lawyer for legal advice.
+                    </p>
                 </div>
                 
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
-                        <li><a href="about.html" class="hover:text-accent transition-colors">About</a></li>
-                        <li><a href="blog.html" class="hover:text-accent transition-colors">Blog</a></li>
-                        <li><a href="faqs.html" class="hover:text-accent transition-colors">FAQs</a></li>
-                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                <!-- Quick Links - Narrower -->
+                <div class="md:col-span-3">
+                    <h3 class="text-white font-bold text-lg mb-3">Quick Links</h3>
+                    <ul class="space-y-1 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition-colors duration-200" style="opacity: 0.9;">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors duration-200" style="opacity: 0.9;">About</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors duration-200" style="opacity: 0.9;">Blog</a></li>
+                        <li><a href="faqs.html" class="hover:text-white transition-colors duration-200" style="opacity: 0.9;">FAQs</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors duration-200" style="opacity: 0.9;">Contact Us</a></li>
                     </ul>
                 </div>
                 
-                <!-- Contact Info -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <p class="text-sm">Serving families throughout Texas</p>
+                <!-- Legal -->
+                <div class="md:col-span-4">
+                    <h3 class="text-white font-bold text-lg mb-3">Legal</h3>
+                    <ul class="space-y-1 text-sm">
+                        <li><a href="privacy-policy.html" class="hover:text-white transition-colors duration-200" style="opacity: 0.9;">Privacy Policy</a></li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="border-t border-green-600 mt-8 pt-6 text-center text-sm">
+            <div class="border-t pt-4 text-center text-sm" style="border-color: rgba(255,255,255,0.2);">
                 <p>&copy; <span id="current-year"></span> Child Custody Legal Aid. All rights reserved.</p>
             </div>
         </div>
