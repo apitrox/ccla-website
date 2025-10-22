@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Child Custody Legal Aid</title>
+    <meta name="description" content="Child Custody Legal Aid articles and resources on family law, child custody, father's rights, and child support in Texas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#046534',
+                        accent: '#ca7f1e',
+                        lightbg: '#eaf1ed'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        .carousel-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .carousel-slide.active {
+            opacity: 1;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-lightbg">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <!-- Logo -->
+            <div class="flex items-center justify-center py-2">
+                <img src="assets/images/logo.png" alt="Child Custody Legal Aid" class="h-16">
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="border-t-0" style="background-color: #ca7f1e;">
+                <div class="flex items-center justify-between">
+                    <!-- Desktop Menu -->
+                    <ul class="hidden md:flex text-base font-medium w-full justify-center gap-1">
+                        <li><a href="index.html" class="block px-2 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
+                        <li><a href="about.html" class="block px-2 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
+                        <li><a href="blog.html" class="block px-2 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
+                        <li><a href="faqs.html" class="block px-2 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
+                        <li><a href="contact.html" class="block px-2 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
+                    </ul>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden focus:outline-none px-4" aria-label="Toggle menu" style="color: #eaf1ed;">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden">
+                    <ul class="flex flex-col space-y-2 py-4">
+                        <li><a href="index.html" class="block px-4 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Home</a></li>
+                        <li><a href="about.html" class="block px-4 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">About</a></li>
+                        <li><a href="blog.html" class="block px-4 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Blog</a></li>
+                        <li><a href="faqs.html" class="block px-4 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">FAQs</a></li>
+                        <li><a href="contact.html" class="block px-4 py-2 hover:bg-accent transition-colors duration-200" style="color: #eaf1ed;">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <div class="carousel-container">
+        <div class="carousel-slide active">
+            <img src="images/slide1.jpg" alt="Family Support">
+        </div>
+        <div class="carousel-slide">
+            <img src="images/slide2.jpg" alt="Legal Aid">
+        </div>
+        <div class="carousel-slide">
+            <img src="images/slide3.jpg" alt="Child Custody">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Page Title -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold mb-4" style="color: #046534;">Blog</h1>
+            <p class="text-lg text-gray-700">Articles and resources on family law, child custody, father's rights, and child support in Texas.</p>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="grid grid-cols-1 gap-8">
+            <!-- Article 1 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3" style="color: #046534;">
+                        <a href="determining-child-custody-texas.html" class="hover:text-accent">Determining Child Custody in Texas</a>
+                    </h2>
+                    <p class="text-gray-700 mb-4">If you are getting divorced or separating from your partner, you will have to determine how custody and visitation (possession and access) of your children will work...</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Posted: April 27, 2017</span>
+                        <a href="determining-child-custody-texas.html" class="text-accent hover:underline font-semibold">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3" style="color: #046534;">
+                        <a href="understanding-fathers-rights-texas.html" class="hover:text-accent">Understanding Father's Rights in Texas</a>
+                    </h2>
+                    <p class="text-gray-700 mb-4">If you are ending a relationship with a woman with whom you have had a child you may be wondering what your rights are as the child's father.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Posted: April 22, 2017</span>
+                        <a href="understanding-fathers-rights-texas.html" class="text-accent hover:underline font-semibold">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3" style="color: #046534;">
+                        <a href="get-custody-children-texas.html" class="hover:text-accent">How to Get Custody of Your Children In Texas</a>
+                    </h2>
+                    <p class="text-gray-700 mb-4">If you are getting divorced or are separating from your partner, one of the issues you may have to face is who will get custody of your child(ren). Although it may seem complicated at first, the process for deciding child custody in Texas is pretty straightforward.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Posted: May 23, 2017</span>
+                        <a href="get-custody-children-texas.html" class="text-accent hover:underline font-semibold">Read More →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Logo & Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Child Custody Legal Aid</h3>
+                    <p class="text-sm">Providing legal assistance and support for child custody matters in Texas.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About</a></li>
+                        <li><a href="blog.html" class="hover:text-accent transition-colors">Blog</a></li>
+                        <li><a href="faqs.html" class="hover:text-accent transition-colors">FAQs</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">Phone: <a href="tel:214-220-8900" class="hover:text-accent transition-colors">214-220-8900</a></p>
+                    <p class="text-sm mt-2">Serving families throughout Texas</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-600 mt-8 pt-6 text-center text-sm">
+                <p>&copy; 2024 Child Custody Legal Aid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Carousel functionality
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        // Auto-advance carousel every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
